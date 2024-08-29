@@ -1,0 +1,677 @@
+:root{
+
+  /* Fuentes */
+  
+  --fuenteDivisor: "Jersey 10", sans-serif;
+  --fuenteNav: "Squada One", sans-serif;
+
+       
+  }
+
+
+html{
+
+    font-size: 62.5%; /* Importante en cada proyecto */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Importante para modelo de caja */
+}
+
+body{
+
+    font-size: 16px; /* Importante en cada proyecto */
+
+}
+
+/*Navegacion*/
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0 , 0, 0.1);
+
+}
+
+nav a{
+
+  font-family: var(--fuenteNav);
+  font-size: 2rem;
+
+}
+
+.logo{
+
+    width: 30rem;
+    height: 10rem;
+    background-image: url('/img/logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.menu{ 
+    
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
+
+.menu li{
+
+    margin-right: 2rem;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    color: #FF69B4;
+    transition: color 0.2s ease;
+
+}
+
+.menu a:hover{
+    
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+/* Navegacion hamburguesa */
+
+.open-menu, .close-menu{
+
+position: absolute;
+color: #FF69B4;
+cursor: pointer;
+font-size: 1.6rem;
+display: none;
+
+}
+
+.open-menu{
+
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+}
+
+.close-menu{
+
+  top: 20px;
+  right: 20px;
+
+
+}
+
+#check{
+
+  display: none;
+
+}
+
+
+/* Imagen Principal */
+
+.principal{
+
+  width: 100%;
+  height: 60rem; /* Ajusta el alto según necesites */
+  background-image: url('/img/principal.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+
+}
+
+/* Integrantes division */
+
+.division {
+    width: 100%;
+    height: 200px; /* Ajusta el alto según necesites */
+    background-color: #FFC5C5; /* Rosa no tan profundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuenteDivisor);
+    font-size: 8rem;
+  }
+
+ .division.uno{
+
+  margin-top: 2rem;
+
+ }
+
+/* Integrantes */
+
+  .integrantes-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .integrante {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    object-fit: cover; /* Agrega esta regla para que las imágenes se ajusten al tamaño */
+  }
+  
+  .texto {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #000;
+    max-width: 400px; /* Agrega esta regla para que los textos tengan un ancho máximo */
+  }
+  
+  .posicion {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .caracteristicas {
+    margin-bottom: 20px;
+    text-align: justify; /* Agrega esta regla para que los textos se justifiquen */
+  }
+
+/* Integrantes Foto */
+
+  .rose {
+    background-image: url('/img/Integrantes/Rose.jpg');
+  }
+  
+  .lisa {
+    background-image: url('/img/Integrantes/Lisa.jpg');
+  }
+  
+  .jisoo {
+    background-image: url('/img/Integrantes/Jisoo.jpg');
+  }
+  
+  .jennie {
+    background-image: url('/img/Integrantes/Jennie.jpg');
+  }
+
+  /* Tarjetas */
+
+  .tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-items: center;
+    margin: 40px auto;
+}
+
+
+  .tarjeta{
+
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.4s;
+    cursor: pointer;
+
+  }
+
+  .img-canc img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+
+  }
+
+  .texto_song{
+
+    margin-top: 1rem;
+    line-height: 1;
+    color: white;
+    
+
+  }
+
+  .texto_song h2{
+
+    font-size: 2rem;
+    
+
+
+  }
+
+  .texto_song p{
+
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    
+
+  }
+
+  .play-boton{
+
+    position: absolute;
+    top: 45%;
+    right: 12%;
+    transform: translateY(10px);
+    filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.4));
+    opacity: 0;
+    transition: all 0.4s;
+
+  }
+
+  .tarjeta:hover .play-boton{
+
+    opacity: 1;
+    transform: translateY(0);
+
+
+  }
+
+  .tarjeta:hover{
+
+    background-color: #222;
+
+  }
+
+  .circ{
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(50,223,50);
+    display: grid;
+    place-items: center;
+    transform: scale(0.95);
+    
+  }
+
+  .trian{
+
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    transform: rotate(90deg);
+    margin-left: 0.2rem;
+    
+  }
+
+  .play-boton:hover .circ{
+
+    cursor: auto;
+    transform: scale(1);
+
+  }
+
+  
+
+  /* Footer */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px; /* Ajusta el alto según necesites */
+    background-color: #000; /* Color negro */
+  }
+  
+  footer .barra {
+    background-color: #FFC5C5; /* Color rosa */
+    height: 50px; /* Ajusta el alto según necesites */
+  }
+
+  /* Diseño Movil */
+
+  @media (max-width: 480px) {
+
+  .division.uno {
+    width: 100%; /* Ajusta el ancho al 100% de la pantalla */
+    height: auto; /* Ajusta el alto automáticamente */
+    padding: 20px; /* Agrega un poco de padding para que se vea bien */
+    font-size: 16px; /* Ajusta el tamaño de la fuente para que se vea bien en la pantalla pequeña */
+  
+  }
+
+  .division {
+    width: 100%; /* Ajusta el ancho al 100% de la pantalla */
+    height: auto; /* Ajusta el alto automáticamente */
+    padding: 20px; /* Agrega un poco de padding para que se vea bien */
+    font-size: 14px; /* Ajusta el tamaño de la fuente para que se vea bien en la pantalla pequeña */
+    text-align: center; /* Centra el texto para que se vea bien en la pantalla pequeña */
+  }
+
+  .principal {
+    width: 100%; /* Ajusta el ancho al 100% de la pantalla */
+    height: 200px; /* Ajusta el alto a un valor fijo para que no se vea demasiado grande */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que cubra el contenedor */
+    background-position: center; /* Centra la imagen para que se vea bien */
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px; /* Puedes ajustar la altura si es necesario */
+    background-color: #FFC5C5; /* Color rosa, mismo que la barra */
+  }
+  
+  footer .barra {
+    height: 100%; /* Aseguramos que ocupe todo el espacio del footer */
+    background-color: #FFC5C5; /* Color rosa */
+  }
+  
+  /* Navegacion */
+
+  nav {
+    position: relative; /* Asegúrate de que el contenedor está en posición relativa */
+  }
+
+  .open-menu, .close-menu {
+    position: absolute;
+    top: 50%; /* Posiciona verticalmente en el medio */
+    right: 1rem; /* Ajusta esto para controlar la distancia desde el borde derecho */
+    color: #FF69B4; /* Color de los iconos */
+    cursor: pointer;
+    font-size: 2rem; /* Ajusta el tamaño del icono según sea necesario */
+    transform: translateY(-50%); /* Ajusta verticalmente el icono para centrarlo */
+    z-index: 101; /* Asegúrate de que esté encima del menú */
+  }
+  
+  .open-menu {
+    display: block;
+  }
+  
+  .close-menu {
+    display: none;
+  }
+  
+  /* Mostrar el icono de cerrar cuando el menú está abierto */
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  
+  #check:checked ~ .open-menu {
+    display: none;
+  }
+  
+  #check:checked ~ .close-menu {
+    display: block;
+  }
+  
+  /* Asegúrate de que el menú ocupa toda la pantalla y se oculta correctamente */
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Inicialmente fuera de la vista */
+    z-index: 100; /* Asegúrate de que el menú está debajo de los iconos */
+    background-color: #222;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Espaciado de los elementos del menú */
+  .menu li {
+    margin-top: 4rem;
+  }
+  
+  .menu li a {
+    padding: 1rem;
+  }
+  
+  /* Control de visibilidad del menú */
+  #check:checked ~ .menu {
+    right: 0; /* Muestra el menú al activar el checkbox */
+  }
+ 
+
+/* Logo */
+
+.logo {
+  width: 20rem; /* Ajusta el ancho del logo */
+  height: 5rem; /* Ajusta el alto del logo */
+  background-size: contain; /* Asegura que el logo no se distorsione */
+  background-position: left center; /* Mantiene el logo en la izquierda */
+  background-repeat: no-repeat;
+}
+
+
+/* Integrantes */
+
+.integrantes-detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos */
+  padding: 10px; /* Agrega un poco de espacio alrededor */
+}
+
+.integrante {
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra los elementos dentro del contenedor */
+  margin: 20px 0; /* Ajusta el margen vertical */
+  width: 100%; /* Asegura que el ancho ocupe el 100% del contenedor */
+  text-align: center; /* Centra el texto */
+}
+
+.foto {
+  width: 150px; /* Tamaño ajustado para el diseño móvil */
+  height: 150px; /* Tamaño ajustado para el diseño móvil */
+  border-radius: 50%; /* Hace la imagen circular */
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.texto {
+  font-size: 16px; /* Ajusta el tamaño del texto para el diseño móvil */
+  max-width: 90%; /* Ajusta el ancho máximo para adaptarse mejor a pantallas pequeñas */
+  text-align: center; /* Centra el texto */
+}
+
+.posicion {
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio debajo del rol */
+}
+
+.caracteristicas {
+  margin-bottom: 10px; /* Espacio debajo de la descripción */
+  text-align: center; /* Centra el texto */
+}
+
+/* Tarjeta Canciones*/
+
+.tarjetas-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tarjetas-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  animation: slide 10s  infinite; /* Cambia el tiempo para ajustar la velocidad del slider */
+}
+
+.tarjeta {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  position: relative;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.img-canc img {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.texto_song {
+  margin-top: 1rem;
+  line-height: 1;
+  color: white;
+  text-align: center; /* Centra el texto */
+}
+
+.texto_song h2 {
+  font-size: 1.5rem; /* Ajusta el tamaño del texto */
+}
+
+.texto_song p {
+  font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.play-boton {
+  position: absolute;
+  top: 45%;
+  right: 12%;
+  transform: translateY(10px);
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.4));
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.tarjeta:hover .play-boton {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tarjeta:hover {
+  background-color: #222;
+}
+
+.circ {
+  width: 3rem; /* Ajusta el tamaño del botón */
+  height: 3rem; /* Ajusta el tamaño del botón */
+  border-radius: 50%;
+  background-color: rgb(50, 223, 50);
+  display: grid;
+  place-items: center;
+  transform: scale(0.95);
+}
+
+.trian {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent; /* Ajusta el tamaño del triángulo */
+  border-right: 6px solid transparent; /* Ajusta el tamaño del triángulo */
+  border-bottom: 6px solid black; /* Ajusta el tamaño del triángulo */
+  transform: rotate(90deg);
+  margin-left: 0.2rem;
+}
+
+.play-boton:hover .circ {
+  cursor: auto;
+  transform: scale(1);
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
+  .tarjeta {
+      flex: 0 0 80%; /* Ajusta el tamaño de las tarjetas */
+      max-width: 80%;
+      margin: 0 auto; /* Centra las tarjetas */
+  }
+  
+  .img-canc img {
+      height: 20rem; /* Ajusta la altura de las imágenes */
+  }
+  
+  .texto_song h2 {
+      font-size: 1.2rem; /* Ajusta el tamaño del texto */
+  }
+
+  .texto_song p {
+      font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+  
+  .play-boton {
+      top: 40%; /* Ajusta la posición del botón */
+      right: 10%;
+  }
+  
+  .circ {
+      width: 2.5rem; /* Ajusta el tamaño del botón */
+      height: 2.5rem; /* Ajusta el tamaño del botón */
+  }
+}
+
+
+/*Diseño tablet*/
+
+@media (max-width: 768px) {
+
+  /* Tarjetas */
+
+  .tarjetas-container {
+      grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas */
+  }
+
+  .tarjeta {
+      width: 100%; /* Asegura que las tarjetas ocupen el espacio disponible */
+  }
+
+   
+  
+  
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
+

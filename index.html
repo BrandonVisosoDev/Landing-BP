@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importamos normalize -->
+
+    <link rel="preload" href="normalize/normalize.css"as="style">
+    <link rel="stylesheet" href="normalize/normalize.css">
+
+    <!-- Importamos estilos -->
+
+    <link rel="preload" href="styles/styles.css"as="style">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Importamos Tipografias -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Squada+One&display=swap" as="Font" crossorigin="crossorigin">
+
+    <!-- Importamos Iconos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Importamos los scripts -->
+
+    <script src="/scripts/slider_control.js"></script>
+       
+    <!-- Damos un titulo -->
+
+    <title>BLACKPINK WEB</title>
+
+</head>
+
+<body>
+
+    <nav>
+
+      <!-- Esto para el menu burger mobile -->
+              
+      <input type="checkbox" id="check">
+      <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+
+
+        <div class="logo">
+<!-- Aquí irá el logo -->
+        </div>
+           
+        <ul class="menu">
+
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#Integrantes">Integrantes</a></li>
+            <li><a href="#Musica">Musica</a></li>
+            <li><a href="#footer">Final</a></li>
+            
+        </ul>
+
+
+    </nav>
+
+    <div class="principal">
+        <!-- Aquí irá la imagen -->
+      </div>
+
+      <!-- Empieza la division de seccion integrantes -->
+
+      <section class="division uno">
+        <div class="titulo">
+          Integrantes
+        </div>
+      </section>
+
+      <!-- Importamos a los integrantes -->
+
+      <section class="integrantes-detalle">
+        <div class="integrante">
+          <div class="foto rose"></div>
+          <div class="texto">
+            <h3>Rosé</h3>
+            <span class="posicion">Vocalista principal y guitarrista</span>
+            <p class="caracteristicas">Rosé es famosa por su voz distintiva y emotiva. Su talento vocal y su carisma en el escenario la han convertido en una de las favoritas de los fans.</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <div class="foto lisa"></div>
+          <div class="texto">
+            <h3>Lisa</h3>
+            <span class="posicion">Rapera principal y bailarina</span>
+            <p class="caracteristicas">Lisa es conocida por sus impresionantes coreografías y su estilo único. Como rapera principal, aporta energía y dinamismo al grupo.</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <div class="foto jisoo"></div>
+          <div class="texto">
+            <h3>Jisoo</h3>
+            <span class="posicion">Vocalista principal y visual</span>
+            <p class="caracteristicas">Jisoo es conocida por su belleza clásica y su voz melódica. Su presencia en el escenario es cautivadora, y su estilo único la ha convertido en un ícono de moda en la industria del K-pop.</p>
+          </div>
+        </div>
+        <div class="integrante">
+          <div class="foto jennie"></div>
+          <div class="texto">
+            <h3>Jennie</h3>
+            <span class="posicion">Rapera principal y líder</span>
+            <p class="caracteristicas">Jennie destaca por su poderosa presencia y habilidades de rap. Su estilo audaz la hace destacar tanto en la música como en la moda.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Termina seccion de integrantes -->
+
+      <!-- Empieza la division de seccion canciones -->
+
+      
+      <section class="division ">
+        <div class="titulo">
+          Canciones Top
+        </div>
+      </section>
+
+      <!-- Termina la division de seccion canciones -->
+       
+      <!-- Empieza la seccion de las mejores canciones -->
+
+      <div class="tarjetas-slider"> <!-- slider es para la version mobile responsive -->
+        <div class="tarjetas-container">
+            <div class="tarjeta">
+                <div class="img-canc">
+                    <img src="/img/Canciones/DuDu.jpeg" alt="Canc DuDu">
+                </div>
+                <div class="texto_song">
+                    <h2>DDU-DU DDU-DU</h2>
+                    <p>BLACKPINK</p>
+                </div>
+                <div class="play-boton">
+                    <div class="circ">
+                        <div class="trian"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="img-canc">
+                    <img src="/img/Canciones/KTL.jpeg" alt="Canc Kill this love">
+                </div>
+                <div class="texto_song">
+                    <h2>Kill This Love</h2>
+                    <p>BLACKPINK</p>
+                </div>
+                <div class="play-boton">
+                    <div class="circ">
+                        <div class="trian"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="img-canc">
+                    <img src="/img/Canciones/BBY.jpeg" alt="Canc Boombayah">
+                </div>
+                <div class="texto_song">
+                    <h2>BOOMBAYAH</h2>
+                    <p>BLACKPINK</p>
+                </div>
+                <div class="play-boton">
+                    <div class="circ">
+                        <div class="trian"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="img-canc">
+                    <img src="/img/Canciones/PWF.jpeg" alt="Canc Playing with fire">
+                </div>
+                <div class="texto_song">
+                    <h2>PLAYING WITH FIRE</h2>
+                    <p>BLACKPINK</p>
+                </div>
+                <div class="play-boton">
+                    <div class="circ">
+                        <div class="trian"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="img-canc">
+                    <img src="/img/Canciones/HYL.jpeg" alt="Canc How you like that">
+                </div>
+                <div class="texto_song">
+                    <h2>How You Like That</h2>
+                    <p>BLACKPINK</p>
+                </div>
+                <div class="play-boton">
+                    <div class="circ">
+                        <div class="trian"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="img-canc">
+                    <img src="/img/Canciones/WHT.jpeg" alt="Canc Whistle">
+                </div>
+                <div class="texto_song">
+                    <h2>WHISTLE</h2>
+                    <p>BLACKPINK</p>
+                </div>
+                <div class="play-boton">
+                    <div class="circ">
+                        <div class="trian"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+      
+      <!-- Termina la seccion de las mejores canciones -->
+
+      <!-- Empieza el footer -->
+
+      <footer >
+        
+        <div class="barra"></div>
+      
+      </footer>
+
+      <!-- Termina el footer -->
+
+    
+</body>
+
+</html>
