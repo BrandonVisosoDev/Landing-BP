@@ -1,11 +1,12 @@
-# BlackPink Lading Page
+# Página de Aterrizaje de BlackPink
 
-* Esta es una landing page construida con Html Css, la cual no es perfecta pero me sirvio como practica  *
-* Si deseas arreglarla o hacerle mejoras puedes hacerlo, te aceptare tus pull request si me parece que funciona  *
+Esta es una página de aterrizaje construida con HTML y CSS. Aunque no es perfecta, me sirvió como práctica.
 
-** Derechos de autor **
+**Si deseas realizar mejoras o arreglos, siéntete libre de hacerlo. Aceptaré tus pull requests si considero que las modificaciones funcionan bien.**
 
-*** Brandon Eden Visoso Nolasco ***
+## Derechos de Autor
 
-> Tiene fallos en el carrucel y en algunos tamaños del responsive design
-> No soy el mejor programador, pero al menos lo intento.
+***Brandon Eden Visoso Nolasco***
+
+> **Nota:** La página presenta algunos fallos en el carrusel y en ciertos tamaños del diseño responsive. No soy el mejor programador, pero al menos lo intento.
+
